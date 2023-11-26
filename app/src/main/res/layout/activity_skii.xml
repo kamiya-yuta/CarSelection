@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkiiActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/liftPass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="-1dp"
+        android:text="以下のレンタルをして、手軽に体験しませんか"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/liftPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skiLesson"
+        android:layout_marginBottom="-1dp"
+        android:text="リフト券" />
+
+    <CheckBox
+        android:id="@+id/skiLesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/equipmentRental"
+        android:layout_marginBottom="-5dp"
+        android:text="スキーレッスン" />
+
+    <CheckBox
+        android:id="@+id/equipmentRental"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmButton"
+        android:layout_marginBottom="72dp"
+        android:text="レンタル" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="218dp"
+        android:text="確認" />
+
+</RelativeLayout>

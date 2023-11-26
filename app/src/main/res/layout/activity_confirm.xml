@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reservationButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item1TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="アイテム1" />
+
+        <CheckBox
+            android:id="@+id/item1CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="選択" />
+
+        <TextView
+            android:id="@+id/item2TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="アイテム2" />
+
+        <CheckBox
+            android:id="@+id/item2CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="選択" />
+
+        <TextView
+            android:id="@+id/item3TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="アイテム3" />
+
+        <CheckBox
+            android:id="@+id/item3CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="選択" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/carTypeTextView"
+        android:layout_width="267dp"
+        android:layout_height="83dp"
+        android:layout_above="@+id/leisureTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="37dp"
+        android:text="車のタイプ: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leisureTextView"
+        android:layout_width="259dp"
+        android:layout_height="117dp"
+        android:layout_above="@+id/itemContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="22dp"
+        android:text="レジャー活動: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reservationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="149dp"
+        android:text="予約する" />
+
+</RelativeLayout>

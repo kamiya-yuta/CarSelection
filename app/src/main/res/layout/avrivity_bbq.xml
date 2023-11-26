@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkiiActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iron"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="5dp"
+        android:text="以下のレンタルをして、手軽に体験しませんか"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/iron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bado"
+        android:layout_marginBottom="4dp"
+        android:text="鉄板" />
+
+    <CheckBox
+        android:id="@+id/bado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/food"
+        android:layout_marginBottom="-5dp"
+        android:text="バドミントン" />
+
+    <CheckBox
+        android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="100dp"
+        android:text="食材" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="118dp"
+        android:text="確認" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="車と行き先を選択してください"
+        android:textSize="100px"
+        app:layout_constraintBottom_toTopOf="@+id/radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/leisure_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_button_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="軽" />
+
+        <RadioButton
+            android:id="@+id/radio_button_sedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="セダン" />
+
+        <RadioButton
+            android:id="@+id/radio_button_van"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ワンボックス" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/leisure_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:paddingTop="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/leisure_button_fishing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="釣り" />
+
+        <RadioButton
+            android:id="@+id/leisure_button_bbq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="バーベキュー" />
+
+        <RadioButton
+            android:id="@+id/leisure_skii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="スキー" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送信"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

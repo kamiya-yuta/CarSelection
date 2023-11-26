@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FishingActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lod"
+        android:layout_marginBottom="51dp"
+        android:text="以下のレンタルをして、手軽に体験しませんか"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/lod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/esa"
+        android:layout_marginBottom="2dp"
+        android:text="釣り竿" />
+
+    <CheckBox
+        android:id="@+id/esa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/baketsu"
+        android:layout_marginBottom="7dp"
+        android:text="餌" />
+
+    <CheckBox
+        android:id="@+id/baketsu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmButton"
+        android:layout_marginBottom="109dp"
+        android:text="バケツ" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="確認" />
+
+</RelativeLayout>
